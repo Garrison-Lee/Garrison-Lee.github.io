@@ -1,0 +1,26 @@
+/* This section defines the tab bar */
+.tab_button {color: black; background: white; height: 40px; width: 30vw; margin: 0px; margin-top: 10px; border-radius: 5px}
+#tab_dial {margin-left: 1vw;}
+#tab_contacts {margin-left: 1vw;}
+#tab_addcontact {margin-left: 1vw;}
+.top_bar {background: gray; height: 60px; border-radius: 7px;}
+
+/* This section defines the dialer layout */
+#dialer_input {width: 95vw; height: 6vh; background-color: white; border-radius: 5px}
+.dialer_button {height: 10vh; width: 29vw; margin: 1vw; border-radius: 5px; background-color: lightgray;
+font-size: 20px;}
+.dial_clear {height: 10vh; width: 45vw; margin: 1vw; border-radius: 5px;}
+#dial {background-color: green; color: white; font-size: 20px}
+#clear {background-color: red; color: white; font-size: 20px;}
+
+/* This section defines the contact list */
+#contacts_header {margin-left: 20px;}
+.contact_button {height: 10vh; width: 29vw; margin: 1vw; border-radius: 6px; background-color: skyblue}
+#content_contacts {background-color: lightgray; border-radius: 6px; height: 100vh; width: 97vw; margin: 0px;}
+
+/* This section defines the Add Contact portion*/
+#name {height: 5vh; width: 93vw; font-size: 22px; border-radius: 5px; margin: 10px;}
+#number {height: 5vh; width: 93vw; font-size: 22px; border-radius: 5px; margin: 10px;}
+#email {height: 5vh; width: 93vw; font-size: 22px; border-radius: 5px; margin: 10px;}
+#clear_contact_form {background-color: red; color: white; font-size: 20px; height: 10vh; width: 45vw; margin: 1vw; border-radius: 5px;}
+#add_contact {background-color: green; color: white; font-size: 20px; height: 10vh; width: 45vw; margin: 1vw; border-radius: 5px;}
