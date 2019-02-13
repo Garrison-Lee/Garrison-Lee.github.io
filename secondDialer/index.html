@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="phone.css">
+	<title>A Worse Phone Interface</title>
+</head>
+<body>
+	<div class="top_bar" id="tab_bar" role="navigation" aria-live="polite">
+		<button class="tab_button" id="tab_dial" accesskey="d">Dial</button>
+
+		<button class="tab_button" id="tab_contacts" accesskey="c">Contact List</button>
+
+		<button class="tab_button" id="tab_addcontact" accesskey="a">Add Contact</button>
+
+		<button class="tab_button" id="tab_help" accesskey="h">Help</button>
+	</div>
+
+	<div class="content" id="content">
+
+		<div class="content_section" id="content_dial" role="main">
+			<h1>Dialer</h1>
+
+			<input id="dialer_input"/>
+
+			<button class="dialer_button" id="1" accesskey="1">1</button>
+			<button class="dialer_button" id="2" accesskey="2">2</button>
+			<button class="dialer_button" id="3" accesskey="3">3</button>
+			<button class="dialer_button" id="4" accesskey="4">4</button>
+			<button class="dialer_button" id="5" accesskey="5">5</button>
+			<button class="dialer_button" id="6" accesskey="6">6</button>
+			<button class="dialer_button" id="7" accesskey="7">7</button>
+			<button class="dialer_button" id="8" accesskey="8">8</button>
+			<button class="dialer_button" id="9" accesskey="9">9</button>
+			<button class="dialer_button" id="*" accesskey="*">*</button>
+			<button class="dialer_button" id="0" accesskey="0">0</button>
+			<button class="dialer_button" id="#" accesskey="#">#</button>
+			<button class="dial_clear"    id="dial" accesskey="e">Dial</button>
+			<button class="dial_clear"    id="clear" accesskey="x">Clear</button>
+
+		</div>
+
+		<div class="content_section" id="content_contacts">
+			<h1 id="contacts_header">Contact List</h1>
+			<table style="width:100%" id="contact_table">
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Phone Number</th>
+					<th>Email</th>
+					<th>Photo</th>
+				</tr>
+				<tr>
+					<td>Sage</td>
+					<td>Madden</td>
+					<td>720-953-9964</td>
+					<td>sauSAGE@notreal.com</td>
+					<td><img src="images/sage_contact.jpg" alt="Sage's Contact" title="Sage's Contact" longdesc="A photo of an adorable brown dog wearing a red hat meant to represent Sage's Contact photo." id="sage_contact_photo"></td>
+				</tr>
+				<tr>
+					<td>Poppy</td>
+					<td>Madden</td>
+					<td>720-426-2364</td>
+					<td>PoppyIsADog@veryreal.com</td>
+					<td><img src="images/poppy_contact.png" alt="Poppy's Contact" title="Poppy's Contact" longdesc="A photo of an adorable brown dog yawning. This is, in fact, Poppy." id="poppy_contact_photo"></td>
+				</tr>
+				<tr>
+					<td>Timothy</td>
+					<td>Thaler</td>
+					<td>661-784-6903</td>
+					<td>tith1234@colorado.edu</td>
+					<td><img src="images/tim_contact.jpg" alt="Tim's Contact" title="Tim's Contact" longdesc="A photo of an adorably ridiculous dog who got her head stuck in a pasta box meant to represent Tim's Contact photo." id="tim_contact_photo"></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="content_section" id="content_addcontact">
+			<h1>Add Contact</h1>
+			<form id="add_contact_form">
+				<label for="name">Name</label>
+				<input id="name" placeholder="Jane Doe"/>
+				<label for="number">Phone Number</label>
+				<input id="number" placeholder="420-666-6969"/>
+				<label for="email">Email</label>
+				<input id="email" placeholder="myemail@gmail.com"/>
+			</form>
+			<button id="add_contact">Add Contact</button>
+			<button id="clear_contact_form">Clear</button>
+		</div>
+
+		<div class="content_section" id="content_help">
+			<h1>Help</h1>
+			<table id="help_table">
+				<tr>
+					<th>Element</th>
+					<th>Shortcut</th>
+				</tr>
+				<tr>
+					<td>Mac Users:</td>
+					<td>Hit 'control' + 'option' + shortcut</td>
+				</tr>
+				<tr>
+					<td>Windows:</td>
+					<td>Hit 'alt' + shortcut</td>
+				</tr>
+				<tr>
+					<td>Help Tab</td>
+					<td>'h'</td>
+				</tr>
+				<tr>
+					<td>Dialer Tab</td>
+					<td>'d'</td>
+				</tr>
+				<tr>
+					<td>Contact Tab</td>
+					<td>'c'</td>
+				</tr>
+				<tr>
+					<td>Add Contact Tab</td>
+					<td>'a'</td>
+				</tr>
+				<tr>
+					<td>Dialer Number Buttons</td>
+					<td>Corresponding Number</td>
+				</tr>
+				<tr>
+					<td>Dial Button</td>
+					<td>'e'</td>
+				</tr>
+				<tr>
+					<td>Clear Dialer Button</td>
+					<td>'x'</td>
+				</tr>
+				<tr>
+					<td>Select Next Element</td>
+					<td>'tab' ('enter' to press the button)</td>
+				</tr>
+				<tr>
+					<td>Select Previous Element</td>
+					<td>'shift' + 'tab'</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="phone.js"></script>
+</body>
+</html>
