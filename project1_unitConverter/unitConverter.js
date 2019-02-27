@@ -107,12 +107,12 @@ function Convert(quantity, from, to) {
 
 	if (from == "bits") {
 		if (to == "bits") { return quantity; }
-		if (to == "gigabytes") { return 8e9*quantity; }
+		if (to == "gigabytes") { return quantity/8e9; }
 		else {	console.alert("You broke it!"); 
 				return -1; }
 	}
 	if (from == "gigabytes") {
-		if (to == "bits") { return quantity/8e9; }
+		if (to == "bits") { return quantity*8e9; }
 		if (to == "gigabytes") { return quantity; }
 		else {	console.alert("You broke it!"); 
 				return -1; }
