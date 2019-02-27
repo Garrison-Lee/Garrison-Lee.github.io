@@ -16,14 +16,14 @@
 #unit_type_content_small {border: 1px solid darkblue; width: 100%; margin-bottom: 1vh;}
 #choose_type_small_div {width:100%;}
 #choose_type_small {text-align: center; color:darkred; font-size: 3vh;}
-.button_small {width: 30%; height: 2vh; border: 1px solid darkblue; background-color:#000054;
-	font-size: 1vh; color: white; margin-bottom:2%; margin-left:0%; margin-right:0px; padding: 0px;}
+.button_small {width: 30%; height: 4vh; border: 1px solid darkblue; background-color:#000054;
+	font-size: 1.5vh; color: white; margin-bottom:2%; margin-left:0%; margin-right:0px; padding: 0px;}
 #distance_small {margin-left: 3%;}
 
 #calculator_whole { border: 1px solid darkred; width: 100%;}
 	#ConvertFrom {font-size:4vh; color:darkblue; text-align: center; margin-top:2%; margin-bottom:2%;}
 		#from_quantity_form {width:100%;}
-			#from_quantity {width:80%; height:3vh; margin-left:10%;}
+			#from_quantity {width:80%; height:3vh; margin-left:10%; margin-bottom:1vh;}
 		#from_type {width:100%;}
 			#dropdown_from_type {width:50%; height:3vh; margin-left: 25%}
 
