@@ -1,0 +1,5 @@
+table {border: 1px solid black; width:100%; table-layout: fixed; font-size:15px;}
+td {border: 1px solid gray;}
+#from-quantity {width:100%;}
+
+/*#calculator {background:red;}*/

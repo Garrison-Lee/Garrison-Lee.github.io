@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="largeScreen.css">
+	<title>Unit Converter</title>
+</head>
+<body>
+
+	<!--TITLE-->
+	<div id="page_title">
+		<h1 id="title">Unit Converter</h1>
+	</div>
+	<section id="container">
+		<!--LEFT MENU FOR LARGE SCREENS-->
+		<div id="unit_type_content_large">
+			<div id="choose_type_large_div">
+				<h3 id="choose_type_large">Type of Unit?</h3>
+			</div>
+			<button type="button" class="button_large" id="distance" onclick="Set_Lengths()">Distance</button>
+			<button type="button" class="button_large" id="liquid" onclick="Set_Liquid()">Liquid</button>
+			<button type="button" class="button_large" id="bits" onclick="Set_Bits()">Bits</button>
+		</div>
+		<!--CALCULATOR ITSELF-->
+		<div id="calculator_whole">
+			<!--FROM SECTION-->
+			<div id="ConvertFrom">
+				Convert From:
+			</div>
+			<div id="from_info">
+				<form action="#" method="post" type="number" id="from_quantity_form">
+					<!--    <label for="from_quantity">Quantity:</label>    -->
+					<input id="from_quantity" placeholder=0.0>
+				</form>
+				<form id="from_type">
+					<!--    <label for="dropdown_from_type">Unit Type:</label>.  -->
+					<select name="from_type_choice" id="dropdown_from_type" class="dropdown">
+						<option value="inches">Inches</option>
+						<option value="feet">Feet</option>
+						<option value="miles">Miles</option>
+					</select>
+				</form>
+			</div>
+			<!--TO SECTION-->
+			<div id="ConvertTo">
+				Convert To:
+			</div>
+			<div id="to_info">
+				<form id="to_type">
+					<!--   <label for="dropdown_to_type">Unit Type:</label>.  -->
+					<select name="to_type-choice" id="dropdown_to_type" class="dropdown">
+						<option value="inches">Inches</option>
+						<option value="feet">Feet</option>
+						<option value="miles">Miles</option>
+					</select>
+				</form>
+			</div>
+			<div id="submit_div">
+				<button type="button" id="submit_button" onclick="Button_Pressed()">Convert!</button>
+			</div>
+		</div>
+		<!--DISPLAY RESULTS-->
+		<div id="results">
+
+		</div>
+	</section>
+	<div id="results_div">
+		<div id="Results">
+			Results:
+		</div>
+		<div id="results_par_div">
+			<p id="results_par"></p>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="unitConverter.js"></script>
+</body>
+</html>
