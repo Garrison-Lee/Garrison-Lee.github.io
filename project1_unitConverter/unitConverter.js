@@ -41,7 +41,6 @@ function Button_Pressed() {
 	var to_type = knowledge[2];
 	var result = Convert(quantity, from_type, to_type);
 	show("results_par_div");
-	console.log(document.getElementById("results_par_div").className);
 	document.getElementById("results_par").innerHTML = (`${quantity} ${from_type} is equivalent to ` +
 		`${result} ${to_type}. At least, I hope it is but don't risk a spaceship on this...`);
 }

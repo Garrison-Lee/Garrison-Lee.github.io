@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<!-- <link rel="stylesheet" href="largeScreen.css"> -->
-	<link rel="stylesheet" media="screen and (min-device-width: 800px)" href="largeScreen.css" />
-	<link rel="stylesheet" media="screen and (max-device-width: 800px)" href="smallScreen.css" />
+	<link rel="stylesheet" media="screen and (min-width: 650px)" href="largeScreen.css" />
+	<link rel="stylesheet" media="screen and (max-width: 650px)" href="smallScreen.css" />
 	<title>Unit Converter</title>
 </head>
 <body>
@@ -21,6 +21,15 @@
 			<button type="button" class="button_large" id="distance" onclick="Set_Lengths()">Distance</button>
 			<button type="button" class="button_large" id="liquid" onclick="Set_Liquid()">Liquid</button>
 			<button type="button" class="button_large" id="bits" onclick="Set_Bits()">Bits</button>
+		</div>
+		<!--TOP MENU FOR SMALL SCREENS-->
+		<div id="unit_type_content_small">
+			<div id="choose_type_small_div">
+				<h3 id="choose_type_small">Type of Unit?</h3>
+			</div>
+			<button type="button" class="button_small" id="distance_small" onclick="Set_Lengths()">Distance</button>
+			<button type="button" class="button_small" id="liqid_small" onclick="Set_Liquid()">Liquid</button>
+			<button type="button" class="button_small" id="bits_small" onclick="Set_Bits()">Bits</button>
 		</div>
 		<!--CALCULATOR ITSELF-->
 		<div id="calculator_whole">
